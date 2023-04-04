@@ -1,0 +1,9 @@
+body {
+    background-color: hsl(226, 43%, 10%);
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
