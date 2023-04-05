@@ -1,11 +1,9 @@
-body {
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: hsl(226, 43%, 10%);
-    color: white;
-    
-}
-
-p {
-    line-height: 180%;
+    color: white;    
 }
 
 .grid-container {
@@ -13,8 +11,9 @@ p {
     height: 75%;
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 10px;   
+    gap: 5px;   
     padding: 5px;
+    justify-content: center;
     align-content: center;
 }
 
@@ -87,16 +86,6 @@ p {
 }
 
 
-.daily {
-    display: block;
-}
 
-.weekly {
-    display: block;
-}
-
-.monthly {
-    display: block;
-}
 
 

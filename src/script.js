@@ -1,34 +1,68 @@
-// Daily
 
-const daily = document.getElementById("daily");
-daily.addEventListener("click", myFunction);
+//hide daily - weekly - monthly
+var daily = document.getElementsByClassName("daily");
+    for (var i=0;i<daily.length;i+=1){
+        daily[i].style.display = 'none';
+    }
+var weekly = document.getElementsByClassName("weekly");
+    for (var i=0;i<weekly.length;i+=1){
+        weekly[i].style.display = 'none';
+    }
+var monthly = document.getElementsByClassName("monthly");
+    for (var i=0;i<monthly.length;i+=1){
+        monthly[i].style.display = 'none';
+    }
 
-function myFunction() {
-    document.getElementsByClassName("daily").style.display = "block";
-    document.getElementsByClassName("weekly").style.display = "none";
-    document.getElementsByClassName("monthly").style.display = "none";
- }
+// click on daily 
+document.getElementById("daily").addEventListener("click", myDaily);
 
+    function myDaily() {
+    var daily = document.getElementsByClassName("daily");
+    for (var i=0;i<daily.length;i+=1){
+    daily[i].style.display = 'block';
+    }
+    var weekly = document.getElementsByClassName("weekly");
+    for (var i=0;i<weekly.length;i+=1){
+    weekly[i].style.display = 'none';
+    }
+    var monthly = document.getElementsByClassName("monthly");
+    for (var i=0;i<monthly.length;i+=1){
+    monthly[i].style.display = 'none';
+    }
+}
 
+// click on weekly
+document.getElementById("weekly").addEventListener("click", myWeekly);
 
+    function myWeekly() {
+    var daily = document.getElementsByClassName("daily");
+    for (var i=0;i<daily.length;i+=1){
+    daily[i].style.display = 'none';
+    }
+    var weekly = document.getElementsByClassName("weekly");
+    for (var i=0;i<weekly.length;i+=1){
+    weekly[i].style.display = 'block';
+    }
+    var monthly = document.getElementsByClassName("monthly");
+    for (var i=0;i<monthly.length;i+=1){
+    monthly[i].style.display = 'none';
+    }
+}
 
-//document.getElementsByClassName("daily")
+// click on monthly 
+document.getElementById("monthly").addEventListener("click", myMonthly);
 
-//element.style.property = new style
-
-//document.getElementById(id).style.property = new style
-
-//weekly
-
-//document.getElementsByClassName("weekly")
-
-//element.style.property = new style
-//document.getElementById(id).style.property = new style
-
-//monthly
-
-//document.getElementsByClassName("monthly")
-
-//element.style.property = new style
-
-//document.getElementById(id).style.property = new style
+    function myMonthly() {
+    var daily = document.getElementsByClassName("daily");
+    for (var i=0;i<daily.length;i+=1){
+    daily[i].style.display = 'none';
+    }
+    var weekly = document.getElementsByClassName("weekly");
+    for (var i=0;i<weekly.length;i+=1){
+    weekly[i].style.display = 'none';
+    }
+    var monthly = document.getElementsByClassName("monthly");
+    for (var i=0;i<monthly.length;i+=1){
+    monthly[i].style.display = 'block';
+    }
+}
