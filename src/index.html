@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-
-    <script src="script.js"></script> 
+    <link rel="stylesheet" href="style.css">    
     
     
     <title>Frontend Mentor | Time tracking dashboard</title>
@@ -29,33 +27,34 @@
           <img src="images/image-jeremy.png">
           <p>Report for</p>  
           <h2>Jeremy Robson</h2> 
-          <div class="text">   
+
+        <div class="text">   
          <a href="#"><p id="daily">Daily</p> </a>  
          <a href="#"><p id="weekly">Weekly</p></a>    
          <a href="#"><p id="monthly">Monthly</p></a> 
-          </div>    
+        </div>    
           
       </div>
 
         
-      <div class="work"> 
-        <img src="images/icon-work.svg"> 
-          <div class="text">
+      <div class="work">
+        <img src="images/icon-work.svg">
+          <div class="text">          
             Work
-          <div class="daily">
-            5hrs <!-- daily -->
-            Previous - 7hrs <!-- daily -->
-          </div>
-          <div class="weekly">
-            32hrs <!-- weekly -->
-            Previous - 36hrs <!-- weekly -->
-          </div>
-          <div class="monthly">
-            103hrs <!-- monthly -->
-            Previous - 128hrs <!-- monthly --> 
-          </div>
+            <div class="daily">
+              <p>5hrs</p> <!-- daily -->
+              <p>Previous - 7hrs</p> <!-- daily -->
+            </div>
+            <div class="weekly">
+              <p>32hrs</p> <!-- weekly -->
+              <p>Last Week - 36hrs</p> <!-- weekly -->
+            </div>
+            <div class="monthly">
+              <p>103hrs</p> <!-- monthly -->
+              <p>Previous - 128hrs </p><!-- monthly --> 
+            </div>
           </div> 
-        </div>
+      </div>
        
         <div class="play">
             <img src="images/icon-play.svg">
@@ -100,7 +99,7 @@
 
         
         <div class="exercise">
-            <img src="images/icon-study.svg">
+            <img src="images/icon-exercise.svg">
             <div class="text">
               Exercise
               <div class="daily">
@@ -162,7 +161,9 @@
   <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">James Holanda</a>.
-    </div>
+  </div>
+
+    <script src="script.js"></script> 
     
   </body>
 </html>
