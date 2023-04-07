@@ -1,24 +1,29 @@
 html, body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: hsl(226, 43%, 10%);
-    color: white;    
+    box-sizing: border-box; 
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    grid-template-rows: 40% 40% 5%;
-    gap: 5px;   
+    grid-template-columns: 15% 15% 15% 15%;
+    grid-template-rows: 30% 30% 5%;
+    background-color: hsl(226, 43%, 10%);
+    color: whitesmoke;
+    gap: 20px;   
     padding: 5px;
     justify-content: center;
     align-content: center;
+    height: 900px;
 }
 
 .grid-container > div {  
     text-align: center;    
     font-size: 18px    
+}
+
+#weekly a:active{
+    color: white;
 }
 
 .person {
@@ -31,9 +36,16 @@ html, body {
     width: 15%;       
 }
 
+.text-person {
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 15px;
+
+} 
+
 .text {
     background-color: hsl(235, 46%, 20%);
     border-radius: 15px;
+    height: 100%;
     
 }
 
@@ -43,7 +55,7 @@ html, body {
 
 .work .play .study .exercise .social .self-care img {
     width: 15%;
-    text-align: right;
+    align-items: right;
 }
 
 
