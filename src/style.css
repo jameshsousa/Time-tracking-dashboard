@@ -18,82 +18,120 @@ html, body {
 }
 
 .grid-container > div {  
-    text-align: center;    
+    align-items: end;    
     font-size: 18px    
 }
 
-#weekly a:active{
-    color: white;
-}
 
 .person {
-    grid-row: 1 / 3;
-    background-color: hsl(246, 80%, 60%);    
-    border-radius: 15px;
-    
+    grid-row: 1 / 3;  
+           
+        
 }
-.person img {
-    width: 15%;       
+
+.person-id {
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 15px;
+    height: 60%;    
+           
+        
+}
+
+.person-id img {
+    padding-bottom: 40px;
+    width: 35%;       
 }
 
 .text-person {
     background-color: hsl(235, 46%, 20%);
-    border-radius: 15px;
+    border-radius: 0 0 15px 15px;
+    padding: 30px 0 0 30px;    
+    text-align: left;
+    height: 45%;    
+    margin-top: -10%;
+    z-index: -1;     
 
 } 
 
-.text {
+.text {      
     background-color: hsl(235, 46%, 20%);
     border-radius: 15px;
-    height: 100%;
+    height: 120%;
+    text-align:justify;
+    position: relative;    
+    z-index: 1;
+    padding-left: 30px; 
+    padding-top: 30px; 
     
 }
 
-.work .play .study .exercise .social .self-care {
+
+img {
+    width: 20%; 
+    align-self:flex-start;
+    justify-self: end;
+    position: relative;
+    z-index: 3;    
+
+}       
+
+
+.work { 
+    display: grid;        
+    background-color: hsl(15, 100%, 70%);       
     border-radius: 15px;
-}
-
-.work .play .study .exercise .social .self-care img {
-    width: 15%;
-    align-items: right;
-}
-
-
-
-.work {
-    background-color: hsl(15, 100%, 70%);
-    border-radius: 15px;    
+    position: relative;
+    z-index: 2;
     
 }
+
+.hour {
+    font-size: 45px;
+
+}
+
 
 .play {
+    display: grid;    
     background-color: hsl(195, 74%, 62%);
     border-radius: 15px;
-    
+    z-index: 3;
+        
 }
 
 .study {
     background-color: hsl(348, 100%, 68%);
     border-radius: 15px;
+    display: grid;
+    z-index: 3;
+    
     
 }
 
 .exercise {
     background-color: hsl(145, 58%, 55%);
     border-radius: 15px;
+    display: grid;
+    z-index: 3;    
     
 }
 
 .social {
     background-color: hsl(264, 64%, 52%);
     border-radius: 15px;
-    
+    display: grid; 
+    z-index: 3;
 }
 
 .self-care {
     background-color: hsl(43, 84%, 65%);
     border-radius: 15px;
-    
+    display: grid; 
+    z-index: 3;   
 }
 
 
